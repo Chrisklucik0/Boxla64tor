@@ -1,0 +1,9 @@
+clear 
+pkg install wget
+pkg install android-tools
+termux-setup-storage
+clear
+pkg update
+pkg upgrade 
+clear
+sleep 2
