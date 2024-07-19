@@ -78,4 +78,9 @@ rm -rf opt/mesa
 tar -xf patch.tar.xz
 rm -rf patch.tar.xz
 cd
+clear
+sleep 2
 
+echo -e "\e[32m[✓] Boxla64tor Emulator Installed Successfully.\e[0m"
+echo -e "\n"
+echo "Type \"boxla64tor\" To Start"
