@@ -7,5 +7,5 @@ pkg update
 pkg upgrade 
 clear
 sleep 2
-echo -e "\e[36m[+] Installing termuxAM\e[0m"
-pkg install termuxam
+echo -e "\e[36m[+] Installing termuxam\e[0m"
+pkg install termux-am
