@@ -11,7 +11,6 @@ sleep 2
 echo -e "\e[36m[+] Installing termuxam\e[0m"
 pkg install termux-am
 
-sleep 2
 echo ""
 echo "Installing necessary packages"
 pkg install x11-repo -y &>/dev/null
