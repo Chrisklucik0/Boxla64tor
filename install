@@ -55,3 +55,27 @@ esac
 
 echo "Installing boxla64tor"
 
+cd $HOME/termux-box/ubuntu-fs/opt
+wget https://github.com/olegos2/termux-box/raw/main/scripts/scripts.tar.gz &>/dev/null
+tar -xf scripts.tar.gz
+rm -rf scripts.tar.gz
+
+cd $HOME/termux-box/
+wget -N https://github.com/olegos2/termux-box/raw/main/scripts/termux-box &>/dev/null
+chmod +x termux-box
+mv termux-box $PREFIX/bin/
+wget -N https://github.com/olegos2/termux-box/raw/main/scripts/start-proot.sh &>/dev/null
+wget -N https://github.com/olegos2/termux-box/raw/main/scripts/start-chroot.sh &>/dev/null
+chmod +x start-proot.sh
+chmod +x start-chroot.sh
+
+echo "Installing patch"
+
+cd $HOME/termux-box/ubuntu-fs
+wget -q --show-progress https://github.com/olegos2/termux-box/releases/download/0.0.1-alpha/patch.tar.xz
+rm -rf opt/d3d
+rm -rf opt/mesa
+tar -xf patch.tar.xz
+rm -rf patch.tar.xz
+cd
+
