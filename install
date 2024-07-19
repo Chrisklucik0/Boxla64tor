@@ -10,5 +10,19 @@ clear
 sleep 2
 echo -e "\e[36m[+] Installing termuxam\e[0m"
 pkg install termux-am
+
 sleep 2
-echo -e "\e[36m[+] termuxam is successfully installed\e[0m"
+echo ""
+echo "Installing necessary packages"
+pkg install x11-repo -y &>/dev/null
+pkg install pulseaudio -y &>/dev/null
+pkg install xwayland -y &>/dev/null
+pkg install proot -y &>/dev/null
+pkg install wget -y &>/dev/null
+pkg install tsu -y &>/dev/null
+pkg install root-repo -y &>/dev/null
+
+rm -rf $HOME/termux-box
+mkdir -p $HOME/termux-box
+cd $HOME/termux-box
+
