@@ -1,4 +1,5 @@
 clear 
+termux-change-repo
 pkg install wget
 pkg install android-tools
 termux-setup-storage
@@ -10,4 +11,4 @@ sleep 2
 echo -e "\e[36m[+] Installing termuxam\e[0m"
 pkg install termux-am
 sleep 2
-echo -e "\e[36m[+] termuxam is successfully installed
+echo -e "\e[36m[+] termuxam is successfully installed\e[0m"
